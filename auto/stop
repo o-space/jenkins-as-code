@@ -1,0 +1,4 @@
+#!/bin/bash -u
+source $(dirname $0)/config
+docker rm -f ${CONTAINER_NAME}
+docker rmi ${IMAGE_NAME}

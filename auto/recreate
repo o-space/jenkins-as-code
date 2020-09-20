@@ -1,0 +1,6 @@
+#!/bin/bash -u
+cd $(dirname $0)
+source config
+docker rm -f ${CONTAINER_NAME}
+docker rmi ${IMAGE_NAME}
+ADMIN_PASS=${ADMIN_PASS} ./start

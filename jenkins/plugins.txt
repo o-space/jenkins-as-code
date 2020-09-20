@@ -1,0 +1,12 @@
+configuration-as-code:latest
+disk-usage:latest
+matrix-auth:latest
+monitoring:latest
+pipeline-model-definition:latest
+pipeline-stage-view:latest
+performance:latest
+sonar:latest
+test-results-analyzer:latest
+timestamper:latest
+workflow-aggregator:latest
+workflow-multibranch:latest

@@ -1,0 +1,16 @@
+#!/bin/bash -eu
+set -o pipefail
+cd $(dirname $0)/..
+source auto/config
+
+docker build -t ${IMAGE_NAME} .
+
+docker run \
+  -e ADMIN_PASS \
+  -p 8080:8080 \
+  -p 50000:50000 \
+  -d \
+  --restart always \
+  --name ${CONTAINER_NAME} \
+  -v jenkins_home:/var/jenkins_home \
+  ${IMAGE_NAME}

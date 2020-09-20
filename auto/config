@@ -1,0 +1,2 @@
+CONTAINER_NAME=jenkins-container
+IMAGE_NAME=dso-jenkins
